@@ -1,0 +1,97 @@
+\documentclass[a4paper]{article}
+\usepackage[tmargin=4cm, bmargin=2.50cm]{geometry} %margin of the document
+\usepackage{graphicx} % for the images on the document
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3} % for the visualization of the toc
+\setcounter{tocdepth}{3} % for the visualization of the toc
+\usepackage[linktoc=all]{hyperref} % for clickable toc
+\usepackage{setspace}
+\usepackage{color}
+
+\onehalfspacing
+
+\begin{document}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % a new command for the horizontal lines, change thickness
+\center % Center everything
+
+%	LOGO SECTION
+\includegraphics[scale=0.25, keepaspectratio]{logo.png}\\[0.5cm] % Logo of the university
+
+%	HEADING SECTIONS
+\textsc{\LARGE Galactic Republic University}\\[0.5cm] % Name of the university
+\textsc{\Large Faculty of Galactic Sciences}\\[0.5cm] % Name of the faculty
+\textsc{\Large Department of Jedi Science}\\[0.5cm] % Name of the department
+\textsc{\Large Fall}\\[0.3cm] % Term 
+\textsc{\large Advanced Light Saber}\\[2.5cm] % Course Title
+
+%	TITLE SECTION
+\HRule \\[0.4cm]
+{\LARGE  Andromeda's satellite galaxies}\\[0.2cm] % Title of the document
+\HRule \\[0.4cm]
+
+%	AUTHOR SECTION
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Luke \textsc{Skywalker} % Name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Instructor:} \\
+Obi-Wan \textsc{Kenobi} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[6cm]
+
+%	DATE SECTION
+{\large \today}\\[3cm] % Date
+ 
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+% Table of Contents
+
+\tableofcontents
+ 
+\newpage
+
+%List of figures and tables
+\phantomsection
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures} 
+
+
+\phantomsection
+\listoftables 
+\addcontentsline{toc}{section}{List of Tables} 
+\newpage
+
+
+% Abstract
+\phantomsection
+\begin{abstract}
+\addcontentsline{toc}{section}{Abstract} 
+
+\end{abstract}
+
+\newpage
+
+\section{Introduction}
+\section{Data}
+\section{Conclusion}
+
+\clearpage
+\begin{thebibliography}{}
+\addcontentsline{toc}{section}{References}
+\bibitem{INT1} Yoda. "A Brief History of Jedism" Journal of The New Jedi Order (Year): 93-98.
+ \end{thebibliography} 
+
+\clearpage
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+
+\end{document}
